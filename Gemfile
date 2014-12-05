@@ -1,10 +1,18 @@
 source 'https://rubygems.org'
 
-
+# require a specific ruby verison
+ruby '2.1.5'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.8'
-# Use sqlite3 as the database for Active Record
-gem 'sqlite3'
+
+# Use sqlite3 for development and test
+gem 'sqlite3', group: [:development, :test]
+# use postgres as a database in production
+gem 'pg', '~> 0.17.1', group: :production
+
+# add 12 factor for heroku
+gem 'rails_12factor', group: :production
+
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.3'
 # Use Uglifier as compressor for JavaScript assets
