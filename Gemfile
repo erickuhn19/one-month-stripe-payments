@@ -40,6 +40,9 @@ gem 'spring',        group: :development
 gem 'stripe', :git => 'https://github.com/stripe/stripe-ruby'
 # Add stripe for payment processing 
 
+# Figaro gem for securly managing credentials
+gem 'figaro'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
