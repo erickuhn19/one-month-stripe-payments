@@ -7,7 +7,7 @@ class CreatePurchases < ActiveRecord::Migration
     	t.string :currency
     	t.string :customer_id
     	t.string :card
-    	t.string :email
+    	t.integer :product_id
     	t.timestamps
     end
   end

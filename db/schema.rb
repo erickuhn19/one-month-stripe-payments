@@ -20,6 +20,7 @@ ActiveRecord::Schema.define(version: 20141218005847) do
     t.string   "currency"
     t.string   "customer_id"
     t.string   "card"
+    t.integer  "product_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
